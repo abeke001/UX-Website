@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f6f6;
+    color: #333;
+}
+
+header {
+    background-color: #000;
+    color: #FFD700;
+    padding: 1em 0;
+    border-bottom: 5px solid #FFD700;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1em;
+}
+
+nav ul li a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    color: #f1f1f1;
+    text-align: center;
+    padding: 5em 0;
+    background-color: #333;
+}
+
+.hero .container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #FFD700;
+    color: #6c6a6a;
+    padding: 1em 2em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #FFC107;
+}
+
+.about, .services, .plates, .physical-plates, .footer {
+    padding: 4em 1em;
+    background-color: rgb(151, 148, 148);
+    text-align: center;
+}
+
+.about h2, .services h2, .plates h2, .physical-plates h2, .footer h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    color: #FFD700;
+}
+
+.service-item, .plate-item, .plate-type {
+    margin-top: 2em;
+    background-color: #eeeaea;
+    padding: 1em;
+    border-radius: 5px;
+    border: 1px solid #FFD700;
+}
+
+footer p {
+    margin-top: 1em;
+}
+
+.plate-list, .plate-types {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.plate-item, .plate-type {
+    width: 200px;
+    margin: 10px;
+    border: 1px solid #FFD700;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #000;
+    color: #FFD700;
+}

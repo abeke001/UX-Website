@@ -3,51 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>FAS Plates</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="signup-container">
-        <h1>Create Your Account</h1>
-        <form id="signup-form">
-            <!-- Full Name Field -->
-            <div class="input-group">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-                <div id="name-error" class="error-message">Name is required.</div>
-            </div>
-
-            <!-- Email Field -->
-            <div class="input-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                <div id="email-error" class="error-message">Please enter a valid email address.</div>
-            </div>
-
-            <!-- Password Field -->
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="Enter your password" required>
-                <div id="password-error" class="error-message">Password is required.</div>
-            </div>
-
-            <!-- Confirm Password Field -->
-            <div class="input-group">
-                <label for="confirm-password">Confirm Password</label>
-                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
-                <div id="confirm-password-error" class="error-message">Passwords must match.</div>
-            </div>
-
-            <button type="submit" class="signup-btn">Sign Up</button>
-        </form>
-
-        <div class="signup-footer">
-            <p>Already have an account? <a href="login.html">Log in</a></p>
+    <header>
+        <div class="container">
+            <h1>OU71AW PLATES Plates</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="plates.html">Plates</a></li>
+                    <li><a href="physical-plates.html">Physical Plates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
-
+    </header>
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Find Your Perfect Numberplate</h2>
+            <p>Your journey to the perfect numberplate starts here.</p>
+            <a href="plates.html" class="btn">Explore Now</a>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At FAS Plates, we specialize in providing personalized numberplates for all types of vehicles. Our mission is to help you find the perfect match that reflects your identity and style.</p>
+        </div>
+    </section>
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-item">
+                <h3>Custom Numberplates</h3>
+                <p>Create a unique numberplate that stands out from the rest.</p>
+            </div>
+            <div class="service-item">
+                <h3>Numberplate Transfers</h3>
+                <p>Easy and hassle-free transfers for your numberplate purchases.</p>
+            </div>
+            <div class="service-item">
+                <h3>Numberplate Valuation</h3>
+                <p>Get an accurate valuation for your existing numberplate.</p>
+            </div>
+        </div>
+    </section>
+    <footer id="contact" class="footer">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out to us via email at info@fasplates.com</p>
+        </div>
+    </footer>
     <script src="script.js"></script>
-
 </body>
 </html>
