@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Plates Information</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>All About Number Plates</h1>
+        <p>Your guide to the fascinating world of number plates!</p>
+    </header>
+
+    <main>
+        <section class="info">
+            <h2>What are Number Plates?</h2>
+            <p>
+                Number plates, also known as vehicle registration plates, are unique identifiers assigned to vehicles. 
+                They serve as proof that a vehicle is registered with the local authorities and comply with road regulations.
+            </p>
+            <h3>A Brief History</h3>
+            <p>
+                The first number plates were introduced in France in 1893, following the passage of the Paris Police Ordinance. 
+                The UK followed in 1903 with the Motor Car Act, mandating all vehicles to display a registration plate. Over the decades, 
+                number plates have evolved into collectible items, with some fetching astronomical prices at auctions!
+            </p>
+        </section>
+
+        <section class="game">
+            <h2>Higher or Lower Game</h2>
+            <p>Guess if the number plate's price was higher or lower than the shown value!</p>
+            <div id="game-container">
+                <div class="plate-display">
+                    <p id="current-plate">Plate: XYZ 789</p>
+                    <p id="guess-price">Price to compare: £25,000</p>
+                </div>
+                <div class="buttons">
+                    <button onclick="guess('higher')">Higher</button>
+                    <button onclick="guess('lower')">Lower</button>
+                </div>
+                <p id="result"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Number Plates Website | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        const plates = [
+            { plate: "S33 YOU", price: 10000 },
+            { plate: "XYZ 789", price: 1000 },
+            { plate: "HU24CAN", price: 7000 },
+            { plate: "RSS 111", price: 3900 },
+            { plate: "F1", price: 1025000 },
+            { plate: "N444AAA", price: 800 },
+            { plate: "Y333 BRO", price: 5000 },
+        ];
+
+        let currentIndex = 0;
+        let currentComparisonPrice = 25000;
+
+        function updateDisplay() {
+            const currentPlate = plates[currentIndex];
+            document.getElementById("current-plate").innerText = `Plate: ${currentPlate.plate}`;
+            document.getElementById("guess-price").innerText = `Price £${currentComparisonPrice}`;
+            document.getElementById("result").innerText = "";
+        }
+
+        function guess(choice) {
+            const currentPlate = plates[currentIndex];
+            const isHigher = currentPlate.price > currentComparisonPrice;
+
+            if ((choice === "higher" && isHigher) || (choice === "lower" && !isHigher)) {
+                document.getElementById("result").innerText = `Correct! The plate ${currentPlate.plate} costs £${currentPlate.price}.`;
+            } else {
+                document.getElementById("result").innerText = `Wrong! The plate ${currentPlate.plate} costs £${currentPlate.price}.`;
+            }
+
+            // Update comparison price and advance to the next plate
+            currentComparisonPrice = currentPlate.price;
+            currentIndex = (currentIndex + 1) % plates.length;
+            setTimeout(updateDisplay, 2000); // Delay before showing the next plate
+        }
+
+        // Initial display
+        updateDisplay();
+    </script>
+</body>
+</html>
