@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styleconfigure.css">
+        <link rel="stylesheet" href="script.js">
+
+    </head>
+    <script>
+        function Carplate() {
+            const plate = document.getElementById("platename");
+            plate.value.toUpperCase();
+        }
+const form = document.getElementById(platename);
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const formData = new FormData(form);
+  const userInput = formData.get(plate);
+  // Do something with the user input
+});
+
+    </script>
+    <title>
+        Make Your Own Plate!
+    </title>
+    <body>
+        <h1>
+        Make Your Own Plate!
+        </h1>
+    </body>
+Enter Your Car plate: <input type="text" id="platename" onblur="Carplate()">
+</html>
