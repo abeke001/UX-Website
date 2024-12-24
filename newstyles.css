@@ -1,0 +1,252 @@
+/* General Styling */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1a1a1a, #000), url('https://www.transparenttextures.com/patterns/black-twill.png');
+    background-size: cover, contain; /* Scale gradient and pattern */
+    background-attachment: fixed; /* Fixed background for a parallax effect */
+    background-blend-mode: overlay; /* Combine gradient and texture */
+    color: #fff;
+}
+
+/* Header and Navigation */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background: rgba(255, 255, 255, 0.05); /* Translucent header */
+    backdrop-filter: blur(8px); /* Blurred effect */
+    border-bottom: 2px solid #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.container h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-shadow: 0px 4px 8px rgba(255, 255, 255, 0.3);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1.5em;
+}
+
+nav ul li a {
+    color: #ddd;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    font-size: 16px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+/* Main Content */
+main {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px 30px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    color: #fff;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Input Section */
+.input-section label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid #444;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Plate Preview */
+.preview-section h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #fff;
+    text-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.plates-display {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for separate display */
+    gap: 20px; /* Space between the plates */
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.plate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto; /* Center each plate */
+    width: 80%; /* Adjust width for better alignment */
+}
+
+.plate.white {
+    background: #fff;
+    color: #000;
+}
+
+.plate.yellow {
+    background: #ffcc00;
+    color: #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.plate:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+}
+
+
+/* Options Section */
+.options {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05); /* Subtle translucent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Border to define section */
+    animation: fadeIn 1s ease-in-out; /* Smooth appearance */
+}
+
+.options h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.option-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.option-group:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.option-group label {
+    font-size: 16px;
+    color: #ccc;
+    margin-right: 15px;
+    flex: 1;
+}
+
+select {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #222;
+    color: #fff;
+    border: 2px solid #444;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+select:focus {
+    border-color: #fff;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+button.add-to-basket {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #fff, #ddd);
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+button.add-to-basket:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.4);
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #888;
+    border-top: 2px solid #333;
+}

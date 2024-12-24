@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Plate Customizer</title>
+    <link rel="stylesheet" href="newstyles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Customize Your Own Plate</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="physical-plates.html">Physical Plates</a></li>
+                <li><a href="info.html">info</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>   
+    <main>
+        <div class="customization-container">
+            <!-- Input Section -->
+            <div class="input-section">
+                <label for="plateInput">Enter Your Registration Number:</label>
+                <input
+                    type="text"
+                    id="plateInput"
+                    placeholder="ENTER REG"
+                    maxlength="10"
+                />
+            </div>
+
+            <!-- Plate Preview -->
+            <div class="preview-section">
+                <h2>Your Plate Preview:</h2>
+                <div class="plates-display">
+                    <div id="frontPlate" class="plate yellow">FRONT</div>
+                    <div id="backPlate" class="plate white">BACK</div>
+                </div>
+            </div>
+
+            <!-- Options -->
+            <div class="options">
+                <h2>Customize Options</h2>
+                <div class="option-group">
+                    <label>Plates Required:</label>
+                    <select id="plateType">
+                        <option value="front-and-rear">Front & Rear</option>
+                        <option value="front">Front Only</option>
+                        <option value="rear">Rear Only</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Action Section -->
+            <div class="action-section">
+                <button class="add-to-basket">Add to Basket</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Car Plate Customizer | Sleek & Functional</p>
+    </footer>
+    <script src="2script.js"></script>
+</body>
+</html>

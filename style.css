@@ -135,9 +135,93 @@ nav ul li a:hover::before {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-footer p {
-    margin-top: 1em;
+/* Footer Section */
+.footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 2em 1em;
+    border-top: 3px solid #fff;
+    position: relative;
 }
+
+.footer h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    color: #fff;
+    text-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    position: relative;
+}
+
+.footer h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #fff;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.footer p {
+    font-size: 1em;
+    color: #ccc;
+    margin-top: 1em;
+    line-height: 1.6;
+}
+
+/* Email Link Styling */
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.footer a:hover {
+    color: #f5f5f5;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+/* Decorative Background for Footer */
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, #333, #fff, #333);
+    z-index: 1;
+}
+
+.footer .container {
+    position: relative;
+    z-index: 2; /* Ensures text appears above decorative lines */
+}
+
+/* Contact Us Button */
+.btn.contact-btn {
+    display: inline-block;
+    margin-top: 1.5em;
+    padding: 0.8em 1.5em;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 2px solid #fff;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.btn.contact-btn:hover {
+    background-color: #000;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.5);
+}
+
 
 .plate-list, .plate-types {
     display: flex;
