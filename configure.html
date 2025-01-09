@@ -6,17 +6,18 @@
 
     </head>
     <script>
-        function Carplate() {
-            const plate = document.getElementById("platename");
-            plate.value.toUpperCase();
+        const U_input = document.getElementById('platename');
+        const button1 = document.getElementById('click');
+        const out1 = document.getElementById('output1');
+
+        function fun1(){
+            out1.innerHTML = U_input.value;
+            out1.toUpperCase();
+
         }
-const form = document.getElementById(platename);
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-  const formData = new FormData(form);
-  const userInput = formData.get(plate);
-  // Do something with the user input
-});
+        button1.addEventListener('click',fun1);
+
+
 
     </script>
     <title>
@@ -27,5 +28,10 @@ form.addEventListener("submit", (event) => {
         Make Your Own Plate!
         </h1>
     </body>
-Enter Your Car plate: <input type="text" id="platename" onblur="Carplate()">
+<article>
+    <div><label for="platename">Car plate Creator</label></div>
+    Enter Your Car plate: <input type="text" id="platename" placeholder="Type Car Plate" maxlength="8">
+    <input type="button" value="click here" id="click">
+    <p class="output" id="output1"></p>
+</article>
 </html>
