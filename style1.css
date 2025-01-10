@@ -18,16 +18,16 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff; /* White text for navigation buttons */
+    color: #fff;
     text-decoration: none;
     padding: 10px 15px;
     transition: background-color 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: white; /* Black background on hover */
-    color: black; /* Ensure text stays white on hover */
-    border-radius: 5px; /* Optional: Add rounded corners for a modern touch */
+    background-color: white;
+    color: black; 
+    border-radius: 5px; 
 }
 
 * {
@@ -42,13 +42,13 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #000; /* Black background for contrast */
-    color: #fff; /* White text for readability */
+    background: #000; 
+    color: #fff; 
 }
 
 .contact h2 {
     font-size: 40px;
-    color: #fff; /* White headings for clarity */
+    color: #fff; 
     text-align: center;
     margin-bottom: 10px;
 }
@@ -71,25 +71,25 @@ form .input-box {
     width: 100%;
     padding: 18px;
     background: transparent;
-    border: 2px solid #fff; /* White border */
+    border: 2px solid #fff;
     outline: none;
     border-radius: 6px;
     font-size: 16px;
-    color: #fff; /* White text */
+    color: #fff; 
     margin: 12px 0;
 }
 
 .field.error .item {
-    border-color: #d93025; /* Keep red for error indication */
+    border-color: #d93025; 
 }
 
 .field .item::placeholder {
-    color: rgba(255, 255, 255, .5); /* Subtle white placeholder */
+    color: rgba(255, 255, 255, .5);
 }
 
 .field .error-txt {
     font-size: 14.5px;
-    color: #d93025; /* Red error text */
+    color: #d93025; 
     text-align: left;
     margin: -5px 0 10px;
     display: none;
@@ -109,13 +109,13 @@ form .textarea-field .error-txt {
 
 form button {
     padding: 12px 32px;
-    background: #fff; /* White background for button */
+    background: #fff;
     border: none;
     outline: none;
     border-radius: 6px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Soft white glow */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
     font-size: 16px;
-    color: #000; /* Black text for contrast */
+    color: #000; 
     letter-spacing: 1px;
     font-weight: 600;
     cursor: pointer;
@@ -125,7 +125,7 @@ form button {
 
 form button:hover {
     box-shadow: none;
-    background: #ccc; /* Slightly darker button on hover */
+    background: #ccc; 
 }
 
 body {

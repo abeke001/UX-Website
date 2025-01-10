@@ -126,18 +126,18 @@ footer {
     margin-top: 2rem;
 }
 
-/* Updated styles for image */
+
 img {
     display: block;
-    margin: 20px auto;  /* Center the image */
-    max-width: 60%;  /* Make the image smaller */
+    margin: 20px auto; 
+    max-width: 60%;  
     height: auto;
     border: 2px solid #d0d0d0;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Animations */
+
 @keyframes fadeIn {
     from {
         opacity: 0;

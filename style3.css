@@ -35,10 +35,51 @@ p {
     display: block;
     width: 100%;
     height: auto;
-    max-height: 300px; /* Control the height of the image */
-    object-fit: cover; /* Make sure the image covers the container proportionally */
+    max-height: 300px; 
+    object-fit: cover;
     margin: 10px 0;
     border: 2px solid #ffffff;
     border-radius: 8px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-left: 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+nav ul li a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
 }
 
