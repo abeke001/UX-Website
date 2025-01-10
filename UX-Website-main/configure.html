@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styleconfigure.css">
+        <link rel="stylesheet" href="script.js">
+
+    </head>
+    <script>
+        const U_input = document.getElementById('platename');
+        const button1 = document.getElementById('click');
+        const out1 = document.getElementById('output1');
+
+        function fun1(){
+            out1.innerHTML = U_input.value;
+            out1.toUpperCase();
+
+        }
+        button1.addEventListener('click',fun1);
+
+
+
+    </script>
+    <title>
+        Make Your Own Plate!
+    </title>
+    <body>
+        <h1>
+        Make Your Own Plate!
+        </h1>
+    </body>
+<article>
+    <div><label for="platename">Car plate Creator</label></div>
+    Enter Your Car plate: <input type="text" id="platename" placeholder="Type Car Plate" maxlength="8">
+    <input type="button" value="click here" id="click">
+    <p class="output" id="output1"></p>
+</article>
+</html>
