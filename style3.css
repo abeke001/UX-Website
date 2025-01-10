@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    text-align: center;
+    background-color: #1a1a1a;
+    padding: 20px;
+}
+
+main {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #ffffff;
+}
+
+.info, .photo {
+    margin-bottom: 20px;
+}
+
+p {
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+.car-photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 300px; /* Control the height of the image */
+    object-fit: cover; /* Make sure the image covers the container proportionally */
+    margin: 10px 0;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+}
+
