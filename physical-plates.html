@@ -6,6 +6,7 @@
     <title>Physical Numberplates - FAS Plates</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script src="cart.js"></script>
 </head>
 <body>
     <header>
@@ -21,6 +22,14 @@
             </nav>
         </div>
     </header>
+    <body>
+        <div class="cart" id="cart">
+            <h3>Cart</h3>
+            <ul id="cart-items"></ul>
+            <p>Total: £<span id="cart-total">0</span></p>
+        </div>
+    
+    </body>
     <section class="hero">
         <div class="container">
             <h2>Physical Numberplates</h2>
@@ -33,27 +42,27 @@
                 <div class="plate-type">
                     <h3>2D Numberplates</h3>
                     <p>£20</p>
-                    <button class="btn purchase-btn">Purchase</button>
+                    <button class="add-to-cart"data-name="2D Plate" data-price="20">Add to cart</button>
                 </div>
                 <div class="plate-type">
                     <h3>3D Numberplates</h3>
                     <p>£30</p>
-                    <button class="btn purchase-btn">Purchase</button>
+                    <button class="add-to-cart"data-name="3D Plate" data-price="30">Add to cart</button>
                 </div>
                 <div class="plate-type">
                     <h3>4D Numberplates</h3>
                     <p>£40</p>
-                    <button class="btn purchase-btn">Purchase</button>
+                    <button class="add-to-cart"data-name="4D Plate" data-price="40">Add to cart</button>
                 </div>
                 <div class="plate-type">
                     <h3>4D Gel Numberplates</h3>
                     <p>£50</p>
-                    <button class="btn purchase-btn">Purchase</button>
+                    <button class="add-to-cart"data-name="4D Gel Plate" data-price="50">Add to cart</button>
                 </div>
                 <div class="plate-type">
                     <h3>5D Gel Numberplates</h3>
                     <p>£60</p>
-                    <button class="btn purchase-btn">Purchase</button>
+                    <button class="add-to-cart"data-name="5D Gel Plate" data-price="60">Add to cart</button>
                 </div>
                 <div class="plate-type">
                     <h3>Custom Plates (Upon Request)</h3>
@@ -75,5 +84,6 @@
     </footer>
     
     <script src="script.js"></script>
+</body>
 </body>
 </html>
